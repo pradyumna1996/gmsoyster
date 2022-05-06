@@ -19,7 +19,6 @@ import java.util.List;
 @NoArgsConstructor
 public class Members {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer memberId;
@@ -70,17 +69,16 @@ public class Members {
     @NotBlank(message = "enter description")
     private String memberDescription;
 
-
     private String memberOriginalPhoto;
 
-    @NotNull(message ="select a date")
+    @NotNull(message ="select Enrollment  date")
     @DateTimeFormat
     private Date memberEnrollmentDate;
 
 //    @NotNull(message ="select a payment status")
     private Boolean memberPaymentStatus;
 
-    @NotNull(message ="select a BIM in number")
+    @NotNull(message ="select a BMI in number")
     @NumberFormat
     private Double memberBMI;
 
